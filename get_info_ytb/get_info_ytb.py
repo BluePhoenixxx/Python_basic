@@ -1,18 +1,42 @@
+<<<<<<< HEAD
+=======
+# Create a class video , class hava title and link
+>>>>>>> 6da28ad (add class playlist)
 class Video:
 	def __init__(self, title, link):
 		self.title = title
 		self.link = link
+<<<<<<< HEAD
 
+=======
+#Create a class playlist , class have name, description , rating ,and class videos
+class Playlist:
+	def __init__(self, name, description, rating, videos):
+		self.name = name
+		self.description = description
+		self.rating = rating
+		self.videos = videos
+#Ask an user enter title and link
+>>>>>>> 6da28ad (add class playlist)
 def read_video():
 	title = input("Enter title: ")
 	link = input("Enter link: ")
 	video = Video(title, link)
 	return video
 
+<<<<<<< HEAD
+=======
+#print title and link of video
+>>>>>>> 6da28ad (add class playlist)
 def print_video(video):
-	print("Video title: ", video.title)
-	print("Video link: ", video.link)
+	print("Video title: ", video.title, end="")
+	print("Video link: ", video.link, end="")
 
+<<<<<<< HEAD
+=======
+
+#Ask an user ttiel and link cog am viedo
+>>>>>>> 6da28ad (add class playlist)
 def read_videos():
 	videos = []
 	total_video = int(input("Enter how many videos: "))
@@ -22,16 +46,32 @@ def read_videos():
 		videos.append(vid)
 	return videos
 
+<<<<<<< HEAD
+=======
+
+#print vide3os
+>>>>>>> 6da28ad (add class playlist)
 def print_videos(videos):
 	print("---")
 	for i in range(len(videos)):
 		print_video(videos[i])
 
+<<<<<<< HEAD
+=======
+
+#write class videos for  in tdxt
+>>>>>>> 6da28ad (add class playlist)
 def write_video_txt(video, file):
 	file.write(video.title + "\n")
 	file.write(video.link + "\n")
 
+<<<<<<< HEAD
 def write_to_txt(videos):
+=======
+
+#
+def write_videos_txt(videos, file):
+>>>>>>> 6da28ad (add class playlist)
 	total = len(videos)
 	file.write(str(total) + "\n")
 	for i in range(total):
@@ -74,4 +114,8 @@ def main():
 	# playlist = read_playlist_from_txt()
 	# print_playlist(playlist)
 
+<<<<<<< HEAD
 main()
+=======
+main()
+>>>>>>> 6da28ad (add class playlist)

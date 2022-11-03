@@ -1,29 +1,18 @@
-# Create a class video , class hava title and link
 class Video:
 	def __init__(self, title, link):
 		self.title = title
 		self.link = link
-#Create a class playlist , class have name, description , rating ,and class videos
-class Playlist:
-	def __init__(self, name, description, rating, videos):
-		self.name = name
-		self.description = description
-		self.rating = rating
-		self.videos = videos
-#Ask an user enter title and link
+
 def read_video():
 	title = input("Enter title: ")
 	link = input("Enter link: ")
 	video = Video(title, link)
 	return video
 
-#print title and link of video
 def print_video(video):
-	print("Video title: ", video.title, end="")
-	print("Video link: ", video.link, end="")
+	print("Video title: ", video.title)
+	print("Video link: ", video.link)
 
-
-#Ask an user ttiel and link cog am viedo
 def read_videos():
 	videos = []
 	total_video = int(input("Enter how many videos: "))
@@ -33,22 +22,16 @@ def read_videos():
 		videos.append(vid)
 	return videos
 
-
-#print vide3os
 def print_videos(videos):
 	print("---")
 	for i in range(len(videos)):
 		print_video(videos[i])
 
-
-#write class videos for  in tdxt
 def write_video_txt(video, file):
 	file.write(video.title + "\n")
 	file.write(video.link + "\n")
 
-
-#
-def write_videos_txt(videos, file):
+def write_to_txt(videos):
 	total = len(videos)
 	file.write(str(total) + "\n")
 	for i in range(total):

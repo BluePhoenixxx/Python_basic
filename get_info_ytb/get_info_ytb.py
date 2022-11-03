@@ -1,66 +1,32 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-# Create a class video , class hava title and link
->>>>>>> 6da28ad (add class playlist)
-=======
 import webbrowser
 
->>>>>>> 475a4b8 (Hoan thanh)
 class Video:
 	def __init__(self, title, link):
 		self.title = title
 		self.link = link
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-#Create a class playlist , class have name, description , rating ,and class videos
-=======
 		self.seen = False
 
 	def open(self):
 		webbrowser.open(self.link)
 		self.seen = True
 
->>>>>>> 475a4b8 (Hoan thanh)
 class Playlist:
 	def __init__(self, name, description, rating, videos):
 		self.name = name
 		self.description = description
 		self.rating = rating
 		self.videos = videos
-<<<<<<< HEAD
-#Ask an user enter title and link
->>>>>>> 6da28ad (add class playlist)
-=======
 
->>>>>>> 475a4b8 (Hoan thanh)
 def read_video():
 	title = input("Enter title: ") + "\n"
 	link = input("Enter link: ") + "\n"
 	video = Video(title, link)
 	return video
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-#print title and link of video
->>>>>>> 6da28ad (add class playlist)
-=======
->>>>>>> 475a4b8 (Hoan thanh)
 def print_video(video):
 	print("Video title: ", video.title, end="")
 	print("Video link: ", video.link, end="")
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
-#Ask an user ttiel and link cog am viedo
->>>>>>> 6da28ad (add class playlist)
-=======
->>>>>>> 475a4b8 (Hoan thanh)
 def read_videos():
 	videos = []
 	total_video = int(input("Enter how many videos: "))
@@ -70,41 +36,16 @@ def read_videos():
 		videos.append(vid)
 	return videos
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
-#print vide3os
->>>>>>> 6da28ad (add class playlist)
-=======
->>>>>>> 475a4b8 (Hoan thanh)
 def print_videos(videos):
 	for i in range(len(videos)):
 		print("Video " + str(i+1) + ":")
 		print_video(videos[i])
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
-#write class videos for  in tdxt
->>>>>>> 6da28ad (add class playlist)
-=======
->>>>>>> 475a4b8 (Hoan thanh)
 def write_video_txt(video, file):
 	file.write(video.title)
 	file.write(video.link)
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-def write_to_txt(videos):
-=======
-
-#
-=======
->>>>>>> 475a4b8 (Hoan thanh)
 def write_videos_txt(videos, file):
->>>>>>> 6da28ad (add class playlist)
 	total = len(videos)
 	file.write(str(total) + "\n")
 	for i in range(total):
@@ -149,13 +90,6 @@ def read_playlist_from_txt():
 	playlist = Playlist(playlist_name, playlist_description, playlist_rating, playlist_videos)
 	return playlist
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-main()
-=======
-main()
->>>>>>> 6da28ad (add class playlist)
-=======
 def print_playlist(playlist):
 	print("-------")
 	print("Playlist name: " +  playlist.name, end="")
@@ -238,8 +172,6 @@ def remove_video(playlist):
 	print("Delete Successfully !!!")
 	return playlist
 
-
-
 def main():
 	try:
 		playlist = read_playlist_from_txt()
@@ -277,4 +209,3 @@ def main():
 			break
 			
 main()
->>>>>>> 475a4b8 (Hoan thanh)
